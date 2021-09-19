@@ -1,0 +1,586 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header {
+  background-image: url(../imagenes/tapa3.jpg);
+  height: 50%;
+  background-position: left top;
+  background-attachment: fixed;
+  background-size: contain;
+  font-family: 'Pacifico', cursive; }
+
+body {
+  background-color: #f5f5f5;
+  font-family: sans-serif;
+  font-size: 16px; }
+
+.row {
+  display: flex;
+  padding: 5px;
+  margin-right: 3px;
+  margin-left: 3px; }
+
+.column {
+  flex: 25%;
+  padding: 5px; }
+  .column img {
+    margin-top: 5px; }
+
+.paquetes {
+  color: white; }
+
+footer {
+  background-color: black;
+  text-align: center;
+  height: 36px;
+  color: white; }
+
+/*  Todos los estilos del menu Nav de Boostraps*/
+nav {
+  background-color: #2b455c; }
+
+.logo__nav {
+  width: 30px; }
+
+#proanglers__navbar {
+  color: #ff0808;
+  font-size: 100%; }
+
+#nav__letra {
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.3rem;
+  margin-left: 3.75rem; }
+
+/* Todos las imagenes de cada html*/
+.header__logo {
+  display: block;
+  width: 7%;
+  margin-left: 65%;
+  margin-top: 13%;
+  animation-duration: 8s;
+  animation-name: logo;
+  animation-iteration-count: infinite; }
+
+.header__proAnglers {
+  color: #ff0808;
+  margin-left: 63.5%;
+  margin-top: -1%; }
+
+.grid__imagen {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+  padding: 0px;
+  object-fit: cover;
+  display: block; }
+
+.grid2__imagen {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 21.5em;
+  height: 35.063em; }
+
+@keyframes logo {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+.grid__imagen1 {
+  border-radius: 5px;
+  width: 15em;
+  padding: 0px;
+  object-fit: cover;
+  display: block; }
+
+img {
+  width: 100%; }
+
+.grid1__iconos {
+  width: 20px; }
+
+/* Mixins */
+.container__img {
+  margin-bottom: 1.2em;
+  margin-top: 1.2em;
+  float: left;
+  margin-right: 1.2em;
+  width: 19em; }
+
+.container__img1 {
+  margin-bottom: 1.2em;
+  margin-top: 1.2em;
+  float: right;
+  margin-left: 1.2em;
+  width: 15em; }
+
+#button-navbar {
+  color: white;
+  background-color: #ffffff; }
+
+.footer__iconos {
+  width: 30px;
+  margin-top: 3px;
+  margin-left: 8px;
+  transition: all 1s ease; }
+  .footer__iconos:hover {
+    transform: scale(1.1, 1.1); }
+
+/* Aca estan todos los estilos de las Grillas*/
+.contenedor {
+  display: block;
+  width: 30%;
+  margin: 20px auto;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.75);
+  border-radius: 10px; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr;
+  grid-column-gap: 5em; }
+  .grid div {
+    padding: 1em;
+    margin: 3em;
+    align-content: center auto; }
+    .grid div:hover {
+      box-shadow: 0 20px 40px; }
+
+.grid__links {
+  display: block;
+  background-color: #2b455c;
+  padding: 13px 0;
+  color: #fafaf6;
+  border-radius: 5px;
+  text-align: center;
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 10px;
+  text-decoration: none;
+  margin-bottom: 4px;
+  color: #ffffff;
+  transition: all 1s ease; }
+  .grid__links:hover {
+    transform: scale(1.1, 1.1); }
+
+.grid1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 2em;
+  margin-top: 2em; }
+  .grid1 div {
+    padding: 1em;
+    margin: 2em;
+    align-content: center auto; }
+
+.grid1__li__nosotros {
+  display: inline-block;
+  width: 15rem;
+  position: relative;
+  font-size: 16px; }
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr; }
+  .grid2 div {
+    padding: 1em;
+    margin: 3em;
+    align-content: center auto; }
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8em;
+  padding: 1em;
+  background-color: white;
+  border-top: 0.5em solid #2b455c; }
+
+/* MAPS*/
+h3 {
+  font-size: 1.5em; }
+
+h4 {
+  font-size: 1em; }
+
+/* Todos los estilos de los textos de cada grid, parrafo, h1, etc, ordenados de menor a mayor especificidad*/
+h1 {
+  color: #2b455c;
+  text-align: center;
+  font-size: 4rem;
+  font-family: sans-serif; }
+
+h2 {
+  margin-top: 2%;
+  text-align: center; }
+
+h4 {
+  font-size: .7em;
+  font-style: italic;
+  text-align: center; }
+
+p {
+  text-align: left; }
+
+body div p {
+  text-align: justify; }
+
+.grid__notas {
+  text-align: center;
+  margin: 1.25em 0 0.625em;
+  word-spacing: 0.2em;
+  line-height: 1.3em; }
+
+.grid__titulo {
+  font-size: 20px; }
+
+.grid1__listado {
+  font-size: 0.5em; }
+
+.grid1__titulo {
+  font-size: 1.5em;
+  text-align: left;
+  font-style: italic;
+  padding-bottom: 0.2em; }
+
+.TextoGaleriaFotos {
+  font-size: 3em;
+  margin-top: 3em;
+  margin-bottom: 2em;
+  font-style: italic;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+.header__titulo {
+  color: #ffffff;
+  text-align: end;
+  margin-right: 1em;
+  font-family: sans-serif;
+  font-size: 400%; }
+
+.container__titulo {
+  font-size: 2.5em;
+  margin-bottom: 2em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+.iniciales {
+  font-size: 3em;
+  display: inline; }
+
+.grid2__parrafo {
+  text-align: center; }
+
+.container p {
+  margin-top: 20px;
+  word-spacing: 0.2em;
+  line-height: 1.4em; }
+
+.introduccion {
+  padding-top: 1em;
+  border: 2px solid white;
+  width: 80%;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  background-color: rgba(43, 69, 92, 0.8);
+  border-radius: 0.625rem; }
+
+.introduccion__parrafo {
+  margin: 0, 12px, 0, 12px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1.3em;
+  color: white; }
+
+/*toda el estilo de lugares.html*/
+.imagenespaquete {
+  width: 100%;
+  height: 80%;
+  border: 3px solid #fff; }
+
+.contenedorpaquete {
+  width: 90%;
+  max-width: 62.5em;
+  margin: 1.25em auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "logopaquete navpaquete navpaquete navpaquete" "incluye incluye comodidades comodidades" "fotospaquete fotospaquete fotospaquete fotospaquete" "footerpaquete footerpaquete footerpaquete footerpaquete";
+  grid-gap: 0.625em; }
+
+.logopaquete {
+  grid-area: logopaquete;
+  color: #ff0808;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 6.25em;
+  border-radius: 0.188em;
+  margin-top: 3.5em; }
+
+.navpaquete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  grid-area: navpaquete;
+  height: 6.25em;
+  background-color: #46444c;
+  text-align: center;
+  border-radius: 0.188em; }
+
+.incluye {
+  grid-area: incluye;
+  border-radius: 0.313em;
+  padding: 1rem;
+  width: 100%; }
+
+.comodidades {
+  grid-area: comodidades;
+  border-radius: 0.313rem;
+  padding: 1rem;
+  width: 100%; }
+
+.fotospaquete {
+  grid-area: fotospaquete;
+  display: flex;
+  justify-content: space-around; }
+
+.footerpaquete {
+  grid-area: footerpaquete;
+  text-align: center;
+  height: 3.125em;
+  border-radius: 0.188em;
+  margin-bottom: 3em; }
+
+.logopescado {
+  width: 4.375em; }
+
+.paqueteh1 {
+  font-size: 2em; }
+
+.paqueteh3 {
+  font-size: 1.5em;
+  font-family: sans-serif; }
+
+.paqueteli {
+  font-family: sans-serif;
+  font-size: 1rem;
+  display: list-item;
+  text-align: -webkit-match-parent;
+  width: 100%; }
+
+.paqueteul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 2.5em; }
+
+::marker {
+  unicode-bidi: isolate;
+  font-variant-numeric: tabular-nums;
+  text-transform: none;
+  text-indent: 0px !important;
+  text-align: start !important;
+  text-align-last: start !important; }
+
+.section comodidades {
+  display: block; }
+
+.texto__paquete {
+  font-size: 1em;
+  font-family: sans-serif;
+  text-align: center; }
+
+.paqueteul paqueteli {
+  position: relative;
+  width: 100%; }
+
+.li paqueteli {
+  width: 100%; }
+
+.proanglers1 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  font-family: pacifico; }
+
+.grid2__a {
+  text-decoration: none;
+  color: #ff0505;
+  font-family: sans-serif; }
+  .grid2__a:hover {
+    text-decoration: underline; }
+
+.error-body {
+  background-image: linear-gradient(-255deg, #2b455c 0%, #60809b 51%, #8ca8be 100%); }
+
+.error-mensaje {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 100px);
+  width: 100%; }
+
+.error-mensaje__container {
+  text-align: center;
+  color: white;
+  width: 30%;
+  height: 15%; }
+  .error-mensaje__container h1 {
+    font-size: 5em;
+    color: white; }
+  .error-mensaje__container p {
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 1em; }
+  .error-mensaje__container a {
+    color: white; }
+
+/*MEDIA O RESPONSIVE O MOBIL FIRST*. Acá si, bien no hacia falta, jugué bastante con las variables, para que me quede como mas me gusta segun cada MQ*/
+@media screen and (min-width: 360px) and (max-width: 640px) {
+  .header__titulo {
+    font-size: 2em; }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 100%; }
+  .grid1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+    margin-top: 2em; }
+    .grid1 div {
+      padding: 1em;
+      margin: 1em;
+      align-content: center auto; }
+  .grid1__li__nosotros {
+    width: 50%; }
+  .grid2 {
+    width: 19.5em;
+    margin-left: 3em;
+    margin-right: auto; }
+    .grid2 div {
+      margin-left: 1em;
+      padding: 0.3em; }
+  .grid2__imagen {
+    width: 17.5em; }
+  .contenedorpaquete {
+    width: 90%;
+    max-width: 62.5em;
+    margin: 1.25em auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "logopaquete navpaquete navpaquete" "incluye comodidades comodidades" "fotospaquete fotospaquete fotospaquete" "footerpaquete footerpaquete footerpaquete";
+    grid-gap: 0.625em; }
+  .paqueteh1 {
+    font-size: 1.5em; } }
+
+@media only screen and (min-width: 641px) and (max-width: 791px) {
+  .header__titulo {
+    font-size: 2em; }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    background-size: fixed;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 100%; }
+  .grid1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+    margin-top: 2em; }
+    .grid1 div {
+      padding: 1em;
+      margin: 1em;
+      align-content: center auto; }
+  .grid1__li__nosotros {
+    width: 50%; }
+  .grid2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr;
+    grid-column-gap: 3em; }
+  .contenedorpaquete {
+    width: 90%;
+    max-width: 62.5em;
+    margin: 1.25em auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "logopaquete navpaquete navpaquete" "incluye comodidades comodidades" "fotospaquete fotospaquete fotospaquete" "footerpaquete footerpaquete footerpaquete";
+    grid-gap: 0.625em; }
+  .paqueteul {
+    padding-inline-start: 0em; }
+  .incluye {
+    padding: 0.1em; } }
+
+@media only screen and (min-width: 792px) and (max-width: 1007px) {
+  .header__titulo {
+    font-size: 300%; }
+  .grid {
+    grid-column-gap: 1em; }
+  .grid1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 1em;
+    margin-top: 2em; }
+    .grid1 div {
+      padding: 1em;
+      margin: 1em;
+      align-content: center auto; }
+  .contenedorpaquete {
+    width: 90%;
+    max-width: 62.5em;
+    margin: 1.25em auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "logopaquete navpaquete navpaquete" "incluye comodidades comodidades" "fotospaquete fotospaquete fotospaquete" "footerpaquete footerpaquete footerpaquete";
+    grid-gap: 0.625em; } }
+
+@media only screen and (min-width: 1008px) and (max-width: 1199px) {
+  .header__titulo {
+    font-size: 350%; }
+  .grid {
+    background-size: fixed; }
+  .grid1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 1em;
+    margin-top: 2em; }
+    .grid1 div {
+      padding: 1em;
+      margin: 1em;
+      align-content: center auto; }
+  .grid1__li__nosotros {
+    width: 50%; }
+  .grid1 {
+    margin-top: 2em;
+    grid-column-gap: 0em; } }
+
+@media only screen and (min-width: 1451px) and (max-width: 1950px) {
+  .footer__iconos {
+    margin-left: 8px; } }
