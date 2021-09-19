@@ -1,0 +1,96 @@
+/* Todos los estilos de los textos de cada grid, parrafo, h1, etc, ordenados de menor a mayor especificidad*/
+
+
+h1{
+    @include colorazul;
+    text-align: center;
+    font-size: 4rem;
+    font-family: sans-serif;
+}
+
+h2{
+    margin-top: 2%;
+    text-align: center;
+}
+h4{
+    font-size: .7em;
+    font-style: italic;
+    text-align: center;
+}
+p{
+    text-align: left;
+}
+body div p{
+    text-align: justify;
+}
+.grid__notas{
+    text-align: center;
+    margin: 1.25em 0 0.625em;
+    word-spacing: 0.2em;
+    line-height: 1.3em;
+}
+.grid__titulo{
+    font-size: 20px;
+}
+.grid1__listado{ 
+    font-size: 0.5em; 
+}
+.grid1__titulo{
+    font-size: 1.5em;
+    text-align: left;
+    font-style: italic;
+    padding-bottom: 0.2em;
+        
+}
+.TextoGaleriaFotos{
+    font-size: 3em;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header__titulo{
+    color: #ffffff;
+    text-align: end;
+    margin-right: 1em;
+    font-family: sans-serif;
+    font-size: 400%;   
+}
+.container__titulo{
+    font-size: 2.5em;
+    margin-bottom: 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
+}
+.iniciales{
+    font-size: 3em;
+    display:inline;
+}
+.grid2__parrafo{
+    text-align: center;
+}
+.container p{
+    margin-top: 20px;
+    word-spacing: 0.2em;
+    line-height: 1.4em;    
+}
+.introduccion{
+    
+    padding-top: 1em;
+    border: 2px solid white;
+    width: 80%;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    background-color: rgba(43, 69, 92, 0.8);
+    border-radius: 0.625rem;
+    ;
+}
+.introduccion__parrafo{
+    margin:0, 12px, 0, 12px;
+    text-align: center; 
+    font-family: sans-serif;
+    font-size: 1.3em;
+    color: white;
+}

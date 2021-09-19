@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-image: url(../imagenes/tapa3.jpg);
+    height: 50%;
+    background-position: left top;
+    background-attachment: fixed;
+    background-size: contain;
+    font-family: 'Pacifico', cursive;     
+}
+body{
+    background-color: #f5f5f5;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.row{ display: flex;
+    padding: 5px;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+.column{ 
+    flex: 25%;
+    padding: 5px;
+    img{
+        margin-top: 5px;
+    }
+}
+.paquetes{
+    color: white;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    height: 36px;
+    color: white;
+}
+@mixin fondoazul {
+    background-color: rgb(43, 69, 92);
+}
+@mixin colorazul {
+    color: rgb(43, 69, 92);
+}
+@mixin colorletra {
+    color: rgb(255, 8, 8);
+    
+}

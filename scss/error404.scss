@@ -1,0 +1,32 @@
+.error-body{
+    background-image: linear-gradient(-255deg, #2b455c 0%, #60809b 51%, #8ca8be 100% );
+
+}
+.error-mensaje{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 100px);
+    width: 100%;
+    
+}
+.error-mensaje__container{
+    text-align: center;
+    color: white;
+   
+    width: 30%;
+    height: 15%;
+    h1{
+        font-size: 5em;
+        color: white;
+    }
+    p{font-size: 1em;
+    text-align: center;
+    margin-bottom: 1em;
+    
+    }
+    a{
+        color: white;
+    }
+}

@@ -1,0 +1,21 @@
+
+/*  Todos los estilos del menu Nav de Boostraps*/
+nav{
+    @include fondoazul;
+    
+
+}
+.logo__nav{
+    width: 30px;
+}
+#proanglers__navbar{
+    @include colorletra;
+    font-size: 100%;
+}
+
+#nav__letra{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+    margin-left: 3.75rem;
+}
