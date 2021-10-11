@@ -74,7 +74,38 @@ $( document ).ready(function(){
                 })
             }
 
+            $.ajax({
+                url: 'https://randomuser.me/api/',
+                dataType: 'json',
+                success: function(data) {
+                 
+                    let cliente = data.results[0];
+                    ;
+                    console.log(cliente);
+                    
+            
+                    $(".cliente").append(`
+                    <div>
+                    <img src="${cliente.picture.large}" class="img-thumbnail"/> 
+                    </div>
+            
+                    <div>
+                    <p>nombre: ${cliente.name.first} ${cliente.name.last} </p>
+                    <p> edad: ${cliente.dob.age}  </p> 
+                    <p> ciudad: ${cliente.location.city}  </p>
+                    <p> email: ${cliente.email}  </p> </div>
+            
+                    
+                    `
+                    )
+               
+                
+                }
+              });
+              
+
 });
+
 
 //let ciudades_pesca = ["Cayasta", "Helvecia", "Santa Elena", "La Paz", "San Javier", "Esquina", "Alejandra"];
 //console.log("ciudades para pesca" + ciudades_pesca);
